@@ -18,11 +18,28 @@
 
 
 <ion-content padding>
-<ion-searchbar (ionInput)="getTopics($event)" ></ion-searchbar>
-
-  <ion-list *ngIf="showList">
-    <ion-item *ngFor="let student of students">
-      <h3>{{student.name}}</h3>
-    </ion-item>
-  </ion-list>
+  <ion-card>
+    <ion-card-header>
+      Name
+    </ion-card-header>
+    <ion-card-content>
+      {{stu_name}}
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <ion-card-header>
+      Address
+    </ion-card-header>
+    <ion-card-content>
+      {{stu_address}}
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <ion-card-header>
+      Age
+    </ion-card-header>
+    <ion-card-content>
+      {{stu_age}}
+    </ion-card-content>
+  </ion-card>
 </ion-content>

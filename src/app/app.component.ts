@@ -21,7 +21,6 @@ export class MyApp {
     this.pages = [
         { title: 'Create student', component: CreateStudentPage },
         { title: 'Student list', component: ListStudentsPage },
-      {title:'Student details',component:StudentDetailsPage}
 
     ];
     platform.ready().then(() => {

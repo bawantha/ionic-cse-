@@ -17,11 +17,10 @@
 
 
 <ion-content padding>
+  <ion-searchbar (ionInput)="getTopics($event)" ></ion-searchbar>
   <ion-list *ngIf="showList">
-    <ion-item *ngFor="let student of students">
+    <ion-item *ngFor="let student of students" (click)='student_selected(student)'>
       <h3>{{student.name}}</h3>
-      <p>{{student.address}}</p>
-      <p>{{student.age}} years old</p>
     </ion-item>
   </ion-list>
 </ion-content>
