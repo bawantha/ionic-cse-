@@ -1,5 +1,13 @@
-<ion-header>
-  <ion-navbar>
+<div id="custom-overlay" [style.display]="splash ? 'flex': 'none'">
+  <div class="flb">
+    <div class="Aligner-item Aligner-item--top"></div>
+    <img src="assets/splah.svg">
+    <div class="Aligner-item Aligner-item--bottom"></div>
+  </div>
+</div>
+
+<ion-header >
+  <ion-navbar class="nav-bar-color">
     <button ion-button menuToggle icon-only>
       <ion-icon name="menu"></ion-icon>
     </button>
@@ -10,12 +18,5 @@
 </ion-header>
 
 <ion-content padding>
-  <ion-card>
-    <ion-card-title>
-      <span style="margin-right:15px;"></span>Hello
-    </ion-card-title>
-    <ion-card-content>
-      <p>Welcome to the student management Ionic app!</p>
-    </ion-card-content>
-  </ion-card>
+  <button ion-button  color="secondary" (click)="doAlert()" round class="button_loc" >Info</button>
 </ion-content>

@@ -19,18 +19,19 @@
 <ion-content padding>
   <form (ngSubmit)="submitStudent()">
     <ion-item>
-      <ion-label>Name</ion-label>
+      <ion-label floating>Name</ion-label>
       <ion-input type="text" [(ngModel)]="student.name" name="name"></ion-input>
     </ion-item>
     <ion-item>
-      <ion-label>Address</ion-label>
+      <ion-label floating>Address</ion-label>
       <ion-input type="text" [(ngModel)]="student.address" name="name"></ion-input>
     </ion-item>
     <ion-item>
-      <ion-label>Age</ion-label>
+      <ion-label floating>Age</ion-label>
       <ion-input type="text" [(ngModel)]="student.age" name="name"></ion-input>
     </ion-item>
     <br/><br/>
-    <button ion-button type="submit" block>Add student</button>
+    <button ion-button type="submit" outline>Add student</button>
+    <button ion-button type="reset" outline  >Clear</button>
   </form>
 </ion-content>

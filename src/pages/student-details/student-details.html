@@ -12,10 +12,17 @@
     <ion-title>
       Student details
     </ion-title>
+
   </ion-navbar>
 </ion-header>
 
 
 <ion-content padding>
+<ion-searchbar (ionInput)="getTopics($event)" ></ion-searchbar>
 
+  <ion-list *ngIf="showList">
+    <ion-item *ngFor="let student of students">
+      <h3>{{student.name}}</h3>
+    </ion-item>
+  </ion-list>
 </ion-content>
